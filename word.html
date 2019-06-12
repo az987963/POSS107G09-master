@@ -26,105 +26,81 @@
     <link rel="stylesheet" href="css/flaticon.css">
     <link rel="stylesheet" href="css/icomoon.css">
     <link rel="stylesheet" href="css/style.css">
-	
-	<meta charset="utf-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    
-    <link rel="shortcut icon" href="TemplateData/favicon.ico">
-    <link rel="stylesheet" href="TemplateData/style.css">
-    <script src="TemplateData/UnityProgress.js"></script>
-    <script src="Build/UnityLoader.js"></script>
-    <script>
-      var gameInstance = UnityLoader.instantiate("gameContainer", "Build/TypeGame.json", {onProgress: UnityProgress});
-    </script>
+
 	
   </head>
   <body>
   
-    <section class="hero-wrap js-fullheight">
-      <div class="container">
-        <div class="row no-gutters slider-text js-fullheight align-items-baseline justify-content-end">
+    <section class="hero-wrap ">
+        <div class="row no-gutters slider-text align-items-baseline justify-content-end">
           <div class="col-md-12 text-center ftco-animate">
-            <h1 class="mt-5" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">TKU</h1>
+            <h1 class="mt-5" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">TKU-word</h1>
             <h2>Multimedia</h2>
           </div>
         </div>
-      </div>
     </section>
 
-    <section class="ftco-section">
     	<div class="container">
     		<div class="row justify-content-center mb-5">
 				
 			<div class="tag-widget post-tag-container mb-5 mt-5">
               <div class="tagcloud">
-                <a href="index.html" class="tag-cloud-link">Home</a>
-                <a href="#" class="tag-cloud-link">Picture</a>
-                <a href="model.php" class="tag-cloud-link">Voice</a>
+				<a href="index.html" class="tag-cloud-link">Home</a>
+				<a href="image.html" class="tag-cloud-link">Image</a>
+                <a href="voice.html" class="tag-cloud-link">Voice</a>
                 <a href="word.html" class="tag-cloud-link">Word</a>
-				<a href="Prjectintro.html" class="tag-cloud-link">Projectintro</a>
-                <a href="Development.html" class="tag-cloud-link">Development introduction</a>
+				<a href="test.html" class="tag-cloud-link">Test</a>
               </div>
             </div>
 			</div>
 		</div>
-	</section>	 
+
 	
-	<section class="ftco-section">
+
 	<div class="row justify-content-center mb-5">
           <div class="col-md-7 heading-section text-center ftco-animate ">
-            <h2 class="mb-3">Game Rank</h2>
-            <?php
-			$conn = mysqli_connect("localhost", "root", "7788", "rank");
-			// Check connection
-			if ($conn->connect_error) {
-			die("Connection failed: " . $conn->connect_error);
-			} 
-			$sql = "SELECT id, studentnumber, name ,score FROM list";
-			$result = $conn->query($sql);
-			if ($result->num_rows > 0) {
-			// output data of each row
-			while($row = $result->fetch_assoc()) {
-				echo "<tr><td>" . $row["id"]. "</td><td>" . $row["studentnumber"] . "</td><td>"
-			. $row["name"]."</td><td>". $row["score"] . "</td></tr>";
-			}
-			echo "</table>";
-			} else { echo "0 results"; }
-			$conn->close();
-			?>
+            <h2 class="mb-3">Key Words</h2>
+			<h5>1. Venetian Roman 威尼斯羅馬體</h5>
+            <p>特色：e 的橫桿會往右上飛起甚至突出，大寫字母 O、C、G 軸心左傾。造型最具手寫特徵。</p>
+			<p>代表字型：Jenson（它的驚嘆號、逗號不是圓形是菱形，保留平頭筆精神）、Centaur（日本愛用，有古典感）、Italian Old Style。</p>
+			<h5>2. Old Roman 古典羅馬體</h5>
+			<p>特色：雖然大寫字母軸心一樣是左傾的，但 e 的橫桿是水平的。常用於文藝場合。</p>
+			<p>代表字型：Garamond（誠品愛用字型，它的 p、9、6 都沒有連起來，相當好認）、Bembo（日本超常用）、Caslon（Q 比較厚重）</p>
+			<h5>3. Transitional Roman 過渡時期羅馬體</h5>
+			<p>特色：大寫字母軸心是垂直的，或僅有微微傾斜。理性學術派風格。</p>
+			<p>代表字型：Baskerville（工整大方）、Fourier（Q 往上勾）、Bulmer、Times（x-height 比較大，容易看膩(?)）</p>
+			<h5>4. Modem Roman 現代羅馬體</h5>
+			<p>特色：筆劃粗細對比極端強烈。時尚優雅。</p>
+			<p>代表字型：Didot、Bodoni、Walbaum（數字優美）</p>
+			<h5>5. Slab Serif 粗襯線體</h5>
+			<p>特色：筆畫粗細均一，連襯線都跟筆畫差不多粗。常用於報章標題或運動場合。</p>
+			<p>代表字型：Clarendon、Rockwell（大學棒球帽上常見）</p>
+			<h5>6. Sans Serif 無襯線體</h5>
+			<p>特色：沒有襯線。所有筆畫都是均一粗度。具現代感，適合科技產品。</p>
+			<p>代表字型：Futura（幾何感，j 只有一條線沒有勾起來）、Avant Garde （八零年代霓虹風格，有特別的連體）、Helvetica（瑞士風格）、Frutiger（機場常見，具良好易辨性）、Myriad（過去蘋果官方字型）、Gill Sans（文藝風格無襯線體，作者 Eric Gill 是個蠻有爭議的雕刻師。全家的 LOGO 就是這個字型）、Optima（臺北捷運站名字型）</p>
+			<h5>7. Wood type 木活字</h5>
+			<p>代表字型：Birch（太空戰士標題）、Blackoak、Mesquite。</p>
+			<h5>8. Script 手寫字型</h5>
+			<p>代表字型：Snell Roundhand</p>
+			<h5>9. Blackletter 歌德體</h5>
+			<p>代表字型：San Marco</p>
           </div>
-		  
 		 </div>
-    </section>
 
 
     <footer class="ftco-footer ftco-section img"> 	
-		<section class="ftco-section">
-		<div class="row justify-content-center mb-5">
-          <div class="col-lg-3 col-md-6 mb-5 mb-md-5 ">
-            <div class="ftco-footer-widget mb-4">
-            	<div class="block-23 mb-3">
-				  <!-- game -->
-					<div class="webgl-content" >
-						<div id="gameContainer" style="width: 960px; height: 600px"></div>
-							<div class="footer">
-							<div class="webgl-logo"></div>
-							<div class="fullscreen" onclick="gameInstance.SetFullscreen(1)"></div>
-							<div class="title">TypeGame</div>
-						</div>
-					</div>
-	            </div>
-            </div>
-          </div>
-		 </div>
-		</section>
+	<div class="row justify-content-center mb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate ">
+          <h2 class="mb-3">Word Falls</h2>
+        </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+		<!-- game -->
+		<iframe src="./WebGL/index.html" name="Word Falls" scrolling="no" frameborder="0" marginheight="px" marginwidth="1280px" height="720px" width="1280px"></iframe>
+	</div>
     </footer>
-    
   
-
-  <!-- loader -->
-  <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee"/><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00"/></svg></div>
-
 
   <script src="js/jquery.min.js"></script>
   <script src="js/jquery-migrate-3.0.1.min.js"></script>
@@ -140,7 +116,6 @@
   <script src="js/bootstrap-datepicker.js"></script>
   <script src="js/jquery.timepicker.min.js"></script>
   <script src="js/scrollax.min.js"></script>
- <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>-->
   <script src="js/main.js"></script>
     
   </body>
