@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+  <head>
+    <title>TKU</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+    
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <link rel="stylesheet" href="css/aos.css">
+
+    <link rel="stylesheet" href="css/ionicons.min.css">
+
+    <link rel="stylesheet" href="css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="css/jquery.timepicker.css">
+
+    
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="p5/p5.js"></script>
+    <script src="p5/addons/p5.dom.js"></script>
+    <script src="sketch.js"></script>
+
+  </head>
+  <body>
+  
+    <section class="hero-wrap">
+        <div class="row no-gutters slider-text align-items-baseline justify-content-end">
+          <div class="col-md-12 text-center ftco-animate">
+            <h1 class="mt-5" style="background-image: url(images/bg_1.jpg);" data-stellar-background-ratio="0.5">TKU-Image</h1>
+            <h2>Multimedia</h2>
+          </div>
+        </div>
+    </section>
+	
+    <div class="container">
+    	<div class="row justify-content-center mb-5">	
+			<div class="tag-widget post-tag-container mb-5 mt-5">
+              <div class="tagcloud">
+				<a href="{{ url('/') }}" class="tag-cloud-link">Home</a>
+                <a href="{{ url('/image') }}" class="tag-cloud-link">Image</a>
+                <a href="{{ url('/voice') }}" class="tag-cloud-link">Voice</a>
+                <a href="{{ url('/word') }}" class="tag-cloud-link">Word</a>
+                <a href="{{ url('/test') }}" class="tag-cloud-link">Test</a>
+              </div>
+            </div>
+		</div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate ">
+          <h2 class="mb-3">RGB</h2>
+		</div>
+	</div>
+	
+	<!--descriptions-->
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>An digital image, which is numbers of variables stored as a data inside the computer. In a computer, images are displayed by the monitor. Which they are formed by many squares into an image. Those little squares, each of them are looked as an unit that form the image. The unit is called pixel(px), or many of them called pixels.
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <img src="./PictureImages/2x2px.jpg">
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>Our monitor uses a set of red, green and blue(RGB Color Model) of super small lights to display different colors with the combination of these colors. In a pixel, there are four variables, Red, Green, Blue and Alpha which is also called R, G, B, A. These four integer variables range from 0 to 255, which controls the lights on our monitor. R controls the red light, G controls the green light, B controls the blue light and A controls the transparency of the image.
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+		<span style="white-space: pre-line">
+			<p>Try changing colors with RGB ! :
+		</span>
+	  </div>
+	</div>
+	
+	<!--game-->
+	<div class="row justify-content-center mb-5">
+		<iframe src="./P5js_RGB/index.html" name="P5JS_RGB" scrolling="no" frameborder="0" marginheight="px" marginwidth="800px" height="300px" width="800px"></iframe>
+	</div>
+	
+	<!--instructions-->
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+		<span style="white-space: pre-line">
+			<p>Instructions:
+			<p>On the top-left of the canvas, there are three sliders, R, G and B. Which is used to control the color of the background of the canvas.
+		</span>
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate ">
+          <h2 class="mb-3">Image Processing</h2>
+        </div>
+	</div>
+
+	<!--descriptions-->
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>In computer science, digital image processing is the use of computer algorithms to perform image processing on digital images.
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>In image processing, kernel is a small matrix. In this case, they are all 3x3 matrix. There is also 5x5 matrix, or even larger ones. It is used for blurring, sharpening, embossing, edge detection and more. These below are different kernels for different functions.
+	  </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="column">
+	    <img src="./PictureImages/identity.jpg">
+	  </div>
+	  <div class="column">
+	    <img src="./PictureImages/leftsobel.jpg">
+	  </div>
+	  <div class="column">
+	    <img src="./PictureImages/topsobel.jpg">
+	  </div>
+	  <div class="column">
+	    <img src="./PictureImages/Outline.jpg">
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="column">
+	    <img src="./PictureImages/sharpen.jpg">
+	  </div>
+	  <div class="column">
+	    <img src="./PictureImages/emboss.jpg">
+	  </div>
+	  <div class="column">
+	    <img src="./PictureImages/boxblur.jpg">
+	  </div>
+	  <div class="column">
+	    <img src="./PictureImages/gaussianblur.jpg">
+	  </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>Sobel is the calculation of Left Sobel and Top Sobel, shown as below:
+	  </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <img src="./PictureImages/sobel.jpg">
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>Using a kernel to process through image, we need to first understand how the matrix calculation works using a kernel in images. We will take the same size of the kernel at part of the image, which is a area of 3x3 part of the image. Then do the matrix calculation below, different from a traditional matrix calculation.
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <img src="./PictureImages/KernelMatrixCalculation.jpg">
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>Image convolution is taking a kernel and swipe it through the whole image from left to right and up to down, doing the matrix calculation for each step. Shown as below:
+	  </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <img src="./PictureImages/Convolution1.jpg">
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <img src="./PictureImages/Convolution2.jpg">
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>“Pencil Drawing”, “Oil Painting”, “Random Puzzle” is just some functions of the combinations of kernels and other equations to generate different effects.
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>“Pencil Drawing” is a function that pass the image through “Outline”, then the reverse color for each pixel, then the average of rgb for each pixel.
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>“Oil Painting” is first passing each pixel through an equation(px = FloortoInt(px / 50) * 50), then pass the original image through “Sobel” and draw black pixel on the image pass through the equation, which the position of the black pixel would be the edge detected by “Sobel”.
+	  </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+	    <p>“Random Puzzle” is first take each pixel and randomly decide to spread it out in a certain distance, after that pass it through “Sharpen” -> “Sharpen” -> “BoxBlur”.
+	  </div>
+	</div>
+
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+		<span style="white-space: pre-line">
+			<p>Try how image processing works ! :
+		</span>
+	  </div>
+	</div>
+
+	<!-- game -->
+	<div class="row justify-content-center mb-5">
+		<iframe src="./ImageProcessing/index.html" name="ImageProcessing" scrolling="no" frameborder="0" marginheight="px" marginwidth="1280px" height="720px" width="1280px"></iframe>
+	</div>
+	
+	<!--instructions-->
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+		<span style="white-space: pre-line">
+			<p>Instructions:
+			<p>Image on the left side is the original image that is uploaded.
+			<p>Image on the right side is the image that is converted.
+			<p>“Upload” button is for uploading an image to the original image.
+			<p>“Download” button is for downloading an image of the converted image.
+			<p>Inside “Target”, “OG” stands for original image, “Conv” stands for converted image.
+			<p>“Original Image” button is to switch the processing target to “OG”.
+			<p>“Converted Image” button is to switch the processing target to “Conv”.
+			<p>On the right-bottom side of the canvas, there is a horizontal scrollview with buttons in it. These are the functions to process the image.
+		</span>
+	  </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+        <div class="col-md-7 heading-section text-center ftco-animate ">
+          <h2 class="mb-3">Image Puzzle</h2>
+        </div>
+	</div>
+	
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+		<span style="white-space: pre-line">
+			<p>Try playing this image puzzle game ! :
+		</span>
+	  </div>
+	</div>
+	
+	<!-- game -->
+	<div class="row justify-content-center mb-5">
+		<iframe src="./ImagePuzzle/index.html" name="ImagePuzzle" scrolling="no" frameborder="0" marginheight="px" marginwidth="1280px" height="720px" width="1280px"></iframe>
+	</div>
+
+	<!--instructions-->
+	<div class="row justify-content-center mb-5">
+	  <div class="col-md-7 heading-section text-center ftco-animate ">
+		<span style="white-space: pre-line">
+			<p>Instructions:
+			<p>This is a 3x3 puzzle game, that you can upload your image and play.
+			<p>“Start Game” -> “Upload Image” -> ”Next” -> Match the puzzle -> Result -> “Restart”.
+		</span>
+	  </div>
+	</div>
+
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery-migrate-3.0.1.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.easing.1.3.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.stellar.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script src="js/jquery.animateNumber.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.timepicker.min.js"></script>
+  <script src="js/scrollax.min.js"></script>
+ <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>-->
+  <script src="js/main.js"></script>
+    
+  </body>
+</html>
